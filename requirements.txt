@@ -9,6 +9,10 @@ defusedxml==0.6.0 ; python_version >= '3.0'
 django-markdownx==2.0.27
 django==2.1.11
 fabric==2.4.0
+google-api-python-client==1.7.9
+google-auth==1.6.3
+google-auth-httplib2==0.0.3
+google-auth-oauthlib==0.4.0
 gunicorn==19.9.0
 idna==2.8
 invoke==1.2.0
