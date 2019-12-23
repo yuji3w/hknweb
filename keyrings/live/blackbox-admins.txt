@@ -1,6 +1,10 @@
+14A
 1F3CAA5F32F6483D
 alex.eecs@hkn.eecs.berkeley.edu
+blackbox new computer
 compserv@hkn.eecs.berkeley.edu
+--help
+hutch@hkn
 hutch@hkn.eecs.berkeley.edu
 jameszhu@berkeley.edu
 jvperrin@hkn.eecs.berkeley.edu
