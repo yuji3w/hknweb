@@ -53,3 +53,9 @@ class Event(models.Model):
     officer = models.CharField(max_length = 200)
     feedback = models.CharField(max_length = 5000)
     comments = models.CharField(max_length = 5000)
+
+
+class Transaction(models.Model):
+    unique_text = models.CharField(max_length = 200, unique = True, primary_key = True)
+    company = Company()
+    message = models.CharField(max_length = 5000)

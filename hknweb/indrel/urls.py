@@ -10,4 +10,5 @@ urlpatterns = [
     path('infosessions/registration', views.InfosessionRegistrationView.as_view(), name="infosessions/registration"),
     path('career-fair', views.career_fair),
     path('contact-us', views.contact_us, name="contact_us"),
+    path('transaction/<str:unique_text>', views.transaction),
 ]

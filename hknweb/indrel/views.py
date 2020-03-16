@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
-from .models import ResumeBookOrderForm, InfosessionRegistration
+from .models import ResumeBookOrderForm, InfosessionRegistration, Transaction
 
 def index(request):
     return render(request, 'indrel/index.html')
@@ -16,6 +16,11 @@ def career_fair(request):
 
 def contact_us(request):
     return render(request, 'indrel/contact_us.html')
+
+def transaction(request, unique_text):
+    transaction = Transaction.objects.get(pk = unique_text)
+    return render(request, 'indrel/transaction.html',
+                  {'Transaction': transaction})
 
 class ResumeBookOrderFormView(generic.DetailView):
     model = ResumeBookOrderForm
