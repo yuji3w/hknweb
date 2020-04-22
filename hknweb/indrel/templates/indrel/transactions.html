@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Infosession Payment{% endblock %}
+
+{% block content %}
+
+Company does not work in admin portal and does not appear here: {{ Transaction.company_name }} <br>
+{{ Transaction.message }} <br>
+Fee which I should convert to a float which only accepts 2 decimals: ${{ Transaction.fee }} <br>
+
+
+{% endblock %}

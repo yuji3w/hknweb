@@ -57,5 +57,6 @@ class Event(models.Model):
 
 class Transaction(models.Model):
     unique_text = models.CharField(max_length = 200, unique = True, primary_key = True)
-    company = Company()
+    company_name = models.CharField(max_length = 200, unique = False, null = True)
+    fee = models.DecimalField(max_digits = 5, decimal_places = 2)
     message = models.CharField(max_length = 5000)
